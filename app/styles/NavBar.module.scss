@@ -1,13 +1,5 @@
-@media (min-width: 640px) {
-  .nav-bar {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-  }
-}
-
-@media (max-width: 640px) {
-  .nav-bar {
-    position: relative;
+.navbar {
+  @media (min-width: 768px) { // adjust as necessary for your breakpoint
+    flex-direction: row-reverse;
   }
 }

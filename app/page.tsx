@@ -14,13 +14,13 @@ const HomePage = () => {
           "https://res.cloudinary.com/dhyu9pxjh/image/upload/v1685655295/gmccma8xxqg1vxg0okek.jpg"
         }
         alt="Nicolás Rodriguez"
-        width={481}
-        height={481}
+        width={511}
+        height={500}
         quality={100}
       />
       <div className="p-4 space-y-4">
-        <h1 className="mt-10 sm:mt-20 text-4xl text-center font-bold text-eggshell">{`Hi! I'm Nicolás Rodríguez`}</h1>
-        <p className="text-xl text-wheat leading-9">
+        <h1 className="mt-10 sm:mt-20 text-4xl text-center font-bold text-eggshell ">{`Hi! I'm Nicolás Rodríguez`}</h1>
+        <p className="text-base sm:text-xl text-wheat leading-8 sm:leading-relaxed text-justify">
           Professional{" "}
           <span className={styles.underlineHighlight}>
             Web Developer
@@ -59,10 +59,10 @@ const HomePage = () => {
           prioritizing continuous development and improvement to deliver
           outstanding results.
         </p>
-        <p className="text-xl text-wheat leading-9">More Creative Text</p>
+        <p className="text-l sm:text-xl text-wheat leading-9 sm:leading-normal text-justify">More Creative Text</p>
         <div className="text-center">
           <button
-            className="w-full sm:w-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            className="w-full sm:w-auto bg-baby-blue hover:bg-blue-700 text-eggshell font-bold py-4 px-4 rounded"
             onClick={() => router.push("/projects")}
           >
             Check out my projects!
