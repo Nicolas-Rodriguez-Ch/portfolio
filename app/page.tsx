@@ -18,7 +18,7 @@ const HomePage = () => {
         height={500}
         quality={100}
       />
-      <div className="p-4 space-y-4">
+      <div className="p-4 space-y-4 mx-auto sm:max-w-xl lg:max-w-3xl">
         <h1 className="mt-10 sm:mt-20 text-4xl text-center font-bold text-eggshell ">{`Hi! I'm Nicolás Rodríguez`}</h1>
         <p className="text-base sm:text-xl text-wheat leading-8 sm:leading-relaxed text-justify">
           Professional{" "}

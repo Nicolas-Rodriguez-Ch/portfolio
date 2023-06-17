@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect, ChangeEvent } from "react";
 import styles from "../../styles/NavBar.module.scss";
 import Image from "next/image";
 
@@ -12,13 +12,25 @@ const NavBar = () => {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+  const closeMenu = (e: MouseEvent) => {
+    if (!(e.target as Element).closest(`.${styles.navbar}`)) {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("click", closeMenu);
+    return () => {
+      window.removeEventListener("click", closeMenu);
+    };
+  }, []);
 
   return (
     <nav
       className={`${styles.navbar} sm:sticky top-0 z-50 bg-gray-custom p-6 text-lg flex justify-between items-center relative sm:w-full`}
     >
       <Image
-        src='https://res.cloudinary.com/dhyu9pxjh/image/upload/v1687036318/IMG_0171_d19qiu.png'
+        src="https://res.cloudinary.com/dhyu9pxjh/image/upload/v1687036318/IMG_0171_d19qiu.png"
         alt="logo"
         width={50}
         height={50}
@@ -26,31 +38,41 @@ const NavBar = () => {
       />
       <button
         onClick={toggleMenu}
-        className="sm:hidden text-blue-custom font-semibold ml-auto z-10"
+        className="sm:hidden text-blue-custom font-semibold ml-auto z-10 transition-all duration-200 ease-in-out"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          {isMenuOpen ? (
+        {isMenuOpen ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
               d="M6 18L18 6M6 6l12 12"
             />
-          ) : (
+          </svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
               d="M3.75 9h16.5m-16.5 6.75h16.5"
             />
-          )}
-        </svg>
+          </svg>
+        )}
       </button>
+
       <div
         className={`absolute sm:static top-full right-0 w-full sm:w-auto overflow-hidden transition-all duration-500 ease-in-out bg-white sm:bg-transparent bg-opacity-90 ${
           isMenuOpen
@@ -63,6 +85,7 @@ const NavBar = () => {
           className={`block text-blue-custom font-semibold hover:text-blue-custom-darken hover:underline ${
             pathname === "/" && "underline"
           } p-2`}
+          onClick={toggleMenu}
         >
           Home
         </Link>
@@ -71,6 +94,7 @@ const NavBar = () => {
           className={`block text-blue-custom font-semibold hover:text-blue-custom-darken hover:underline ${
             pathname.startsWith("/projects") && "underline"
           } p-2`}
+          onClick={toggleMenu}
         >
           Projects
         </Link>
@@ -79,6 +103,7 @@ const NavBar = () => {
           className={`block text-blue-custom font-semibold hover:text-blue-custom-darken hover:underline ${
             pathname.startsWith("/contact") && "underline"
           } p-2`}
+          onClick={toggleMenu}
         >
           Contact
         </Link>
