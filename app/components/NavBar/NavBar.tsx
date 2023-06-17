@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import React, { useState } from "react";
 import styles from "../../styles/NavBar.module.scss";
+import Image from "next/image";
 
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -16,6 +17,13 @@ const NavBar = () => {
     <nav
       className={`${styles.navbar} sm:sticky top-0 z-50 bg-gray-custom p-6 text-lg flex justify-between items-center relative sm:w-full`}
     >
+      <Image
+        src='https://res.cloudinary.com/dhyu9pxjh/image/upload/v1687036318/IMG_0171_d19qiu.png'
+        alt="logo"
+        width={50}
+        height={50}
+        className={styles.logo}
+      />
       <button
         onClick={toggleMenu}
         className="sm:hidden text-blue-custom font-semibold ml-auto z-10"

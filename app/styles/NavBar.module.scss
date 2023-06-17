@@ -1,5 +1,17 @@
 .navbar {
-  @media (min-width: 768px) { // adjust as necessary for your breakpoint
-    flex-direction: row-reverse;
+  flex-direction: column-reverse;
+
+  @media (min-width: 640px) { // or your preferred breakpoint for "desktop"
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+.logo {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+
+  @media (min-width: 640px) {
+    position: static;
   }
 }
