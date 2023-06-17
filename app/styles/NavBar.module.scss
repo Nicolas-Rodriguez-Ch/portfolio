@@ -1,13 +1,17 @@
-@media (min-width: 640px) {
-  .nav-bar {
-    position: sticky;
-    top: 0;
-    z-index: 50;
+.navbar {
+  flex-direction: column-reverse;
+
+  @media (min-width: 640px) { // or your preferred breakpoint for "desktop"
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
+.logo {
+  position: absolute;
+  left: 10px;
+  top: 20px;
 
-@media (max-width: 640px) {
-  .nav-bar {
-    position: relative;
+  @media (min-width: 640px) {
+    position: static;
   }
 }
