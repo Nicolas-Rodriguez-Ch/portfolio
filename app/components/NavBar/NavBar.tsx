@@ -1,39 +1,70 @@
 "use client";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const NavBar = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="bg-gray-custom flex justify-start space-x-4 p-4 text-lg">
-      <Link
-        href={"/"}
-        className={`text-blue-custom font-semibold hover:border-b-2 hover:border-blue-custom-darken hover:pb-1 ${
-          pathname === "/" && "border-b-2 border-blue-custom-darken pb-1"
-        }`}
-      >
-        Home
-      </Link>
-      <Link
-        href={"projects"}
-        className={`text-blue-custom font-semibold hover:border-b-2 hover:border-blue-custom-darken hover:pb-1 ${
-          pathname.startsWith("/projects") &&
-          "border-b-2 border-blue-custom-darken pb-1"
-        }`}
-      >
-        Projects
-      </Link>
-      <Link
-        href={"contact"}
-        className={`text-blue-custom font-semibold hover:border-b-2 hover:border-blue-custom-darken hover:pb-1 ${
-          pathname.startsWith("/contact") &&
-          "border-b-2 border-blue-custom-darken pb-1"
-        }`}
-      >
-        Contact
-      </Link>
-    </div>
+    <>
+      <nav className="sm:sticky top-0 z-50 bg-gray-custom p-6 text-lg flex justify-between items-center">
+        <div
+          className={`${
+            isMenuOpen ? "flex" : "hidden"
+          } sm:flex space-x-4 ml-auto`}
+        >
+          <Link
+            href={"/"}
+            className={`text-blue-custom font-semibold hover:text-blue-custom-darken hover:underline ${
+              pathname === "/" && "underline"
+            }`}
+          >
+            Home
+          </Link>
+          <Link
+            href={"/projects"}
+            className={`text-blue-custom font-semibold hover:text-blue-custom-darken hover:underline ${
+              pathname.startsWith("/projects") && "underline"
+            }`}
+          >
+            Projects
+          </Link>
+          <Link
+            href={"/contact"}
+            className={`text-blue-custom font-semibold hover:text-blue-custom-darken hover:underline ${
+              pathname.startsWith("/contact") && "underline"
+            }`}
+          >
+            Contact
+          </Link>
+        </div>
+        <button
+          onClick={toggleMenu}
+          className="sm:hidden text-blue-custom font-semibold ml-auto"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 9h16.5m-16.5 6.75h16.5"
+            />
+          </svg>
+        </button>
+      </nav>
+    </>
   );
 };
 

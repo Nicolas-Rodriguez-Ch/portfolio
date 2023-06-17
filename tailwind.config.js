@@ -16,6 +16,8 @@ module.exports = {
         'gray-custom': '#f2f2f2',
         'blue-custom': '#2b6777',
         'blue-custom-darken': '#1b4953',
+        'eggshell': '#f2ead5',
+        'wheat': '#F5DEB3'
       }
     },
   },

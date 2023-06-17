@@ -1,0 +1,19 @@
+.underlineHighlight {
+  position: relative;
+  display: inline-block;
+}
+
+.underline {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: -5px;
+  left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .underline {
+    width: 120%;
+    left: -10%;
+  }
+}
