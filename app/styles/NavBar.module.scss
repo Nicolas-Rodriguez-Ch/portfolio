@@ -1,7 +1,7 @@
 .navbar {
   flex-direction: column-reverse;
 
-  @media (min-width: 640px) { // or your preferred breakpoint for "desktop"
+  @media (min-width: 640px) {
     flex-direction: row;
     justify-content: flex-end;
   }

@@ -5,19 +5,12 @@ import React, { useState, useEffect } from "react";
 import styles from "../styles/NavBar.module.scss";
 import Image from "next/image";
 import Links from "./Links";
-import { useTranslation } from "react-i18next";
+import Link from "next/link";
+import { assets } from "@/utils/assets";
 
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-  const { t, i18n } = useTranslation();
-
-  type LangKey = "en" | "es";
-
-  const langs: Record<LangKey, { nativeName: string }> = {
-    en: { nativeName: "English" },
-    es: { nativeName: "Español" },
-  };
 
   const isDesktop = () => window.innerWidth > 768;
   const toggleMenu = () => {
@@ -39,21 +32,19 @@ const NavBar = () => {
     };
   }, []);
 
-  const langSwitch = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    i18n.changeLanguage(e.target.value);
-  };
-
   return (
     <nav
       className={`${styles.navbar} sm:sticky top-0 z-50 bg-gray-custom p-6 text-lg flex justify-between items-center relative sm:w-full`}
     >
-      <Image
-        src="https://res.cloudinary.com/dhyu9pxjh/image/upload/v1687036318/IMG_0171_d19qiu.png"
-        alt="logo"
-        width={50}
-        height={50}
-        className={styles.logo}
-      />
+      <Link href="/">
+        <Image
+          src={assets.logo}
+          alt="logo"
+          width={50}
+          height={50}
+          className={styles.logo}
+        />
+      </Link>
       <button
         onClick={toggleMenu}
         className="sm:hidden text-blue-custom font-semibold ml-auto z-10 transition-all duration-200 ease-in-out"
@@ -106,33 +97,6 @@ const NavBar = () => {
             pathname={pathname}
           />
         ))}
-        <div className="pl-2 sm:pl-0 block sm:inline-flex sm:items-center">
-          <label
-            htmlFor="language"
-            className="block text-blue-custom font-semibold mr-1"
-          >
-            Select Language:
-          </label>
-          <select
-            onChange={langSwitch}
-            name="language"
-            id="language"
-            className="block text-blue-custom font-semibold hover:text-blue-custom-darken bg-gray-custom border-1 border-blue-custom p-1"
-          >
-            {Object.keys(langs).map((langKey) => {
-              const lang = langKey as LangKey;
-              return (
-                <option
-                  key={lang}
-                  value={lang}
-                  className="block text-blue-custom font-semibold hover:text-blue-custom-darken hover:underline"
-                >
-                  {langs[lang].nativeName}
-                </option>
-              );
-            })}
-          </select>
-        </div>
       </div>
     </nav>
   );
