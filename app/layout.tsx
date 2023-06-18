@@ -1,4 +1,4 @@
-import NavBar from "./components/NavBar/NavBar";
+import NavBar from "./components/NavBar";
 import "./styles/globals.scss";
 import { Inter } from "next/font/google";
 
