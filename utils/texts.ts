@@ -15,6 +15,9 @@ export const texts = {
   aboutIntro3: `But let's not stop at coding—I'm all about infusing personality and creativity into my projects. When I'm not immersed in lines of code, you'll find me exploring the captivating realm of board games, diving into the latest mind-bending sci-fi novels, or simply savoring the flavors of a perfectly brewed cup of coffee.`,
   aboutIntro4: `Now, here's the exciting part—I'm eager to collaborate and contribute to your goals. Together, we'll turn your vision into a digital reality that shines. So don't hesitate to reach out and let's embark on this thrilling journey of growth and success. I can't wait to connect with you!`,
   aboutTechSkills: "Technical Skills",
+  aboutExp: "Experience",
+  aboutEdu: "Education",
+  aboutGraduation: 'Graduation'
 };
 
 export const stack: string[] = [
@@ -27,5 +30,6 @@ export const stack: string[] = [
   "PostgreSQL",
   "MongoDB",
   "Git",
+  "TailwindCSS",
   "SASS",
 ];
