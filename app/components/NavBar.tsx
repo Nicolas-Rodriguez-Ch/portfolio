@@ -12,7 +12,7 @@ const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isDesktop = () => window.innerWidth > 768;
+  const isDesktop = () => window.innerWidth >= 760;
   const toggleMenu = () => {
     if (!isDesktop()) {
       setMenuOpen(!isMenuOpen);
