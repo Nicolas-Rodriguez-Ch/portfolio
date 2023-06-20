@@ -1,4 +1,8 @@
-export const texts = {
+export type TextsType = {
+  [key: string]: string;
+};
+
+export const texts: TextsType = {
   homeLink: "Home",
   projectsLink: "Projects",
   contactLink: "Contact",
@@ -17,7 +21,14 @@ export const texts = {
   aboutTechSkills: "Technical Skills",
   aboutExp: "Experience",
   aboutEdu: "Education",
-  aboutGraduation: 'Graduation'
+  aboutGraduation: "Graduation",
+  aboutLinks: "My Links",
+  linksGitHub: "GitHub",
+  linksLinkedIn: 'LinkedIn',
+  linksEmailHotmail: 'nicolasrodriguezch@hotmail.com',
+  linksEmailGmail: 'nicolasrodriguezch@gmail.com',
+  linksPhoneNumber: "+57 300 264 3270",
+  linksLocation: "Bogotá D.C., Colombia"
 };
 
 export const stack: string[] = [
@@ -32,4 +43,11 @@ export const stack: string[] = [
   "Git",
   "TailwindCSS",
   "SASS",
+];
+
+export const ABOUT_PARAGRAPHS: string[] = [
+  "aboutIntro1",
+  "aboutIntro2",
+  "aboutIntro3",
+  "aboutIntro4",
 ];
