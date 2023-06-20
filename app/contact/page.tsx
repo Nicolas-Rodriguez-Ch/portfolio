@@ -1,13 +1,14 @@
-"use client";
 import { assets } from "@/utils/assets";
-import { texts, stack } from "@/utils/texts";
+import { texts, stack, ABOUT_PARAGRAPHS } from "@/utils/texts";
 import { experiences, education } from "@/utils/experience";
-import { socialsLinks } from "@/utils/socialLinks";
+import { socialsLinks } from "@/utils/links";
 import Image from "next/image";
 import React from "react";
 import ExperienceBlock from "../components/ExperienceBlock";
 import EducationBlock from "../components/EducationBlock";
 import SocialsLinks from "../components/SocialsLinks";
+import AboutParagraphs from "../components/AboutParagraphs";
+import AboutSection from "../components/AboutSection";
 
 const ContactPage = () => {
   return (
@@ -23,23 +24,14 @@ const ContactPage = () => {
             className="p-5 sm:p-10"
           />
         </picture>
-        <section className="border-b border-gray-200 last:border-b-0 pt-5 sm:pt-10 pr-5 sm:pr-10 pb-5 sm:pb-10 pl-5 sm:pl-10">
-          <p className="text-base mb-2 sm:text-xl text-wheat leading-8 sm:leading-relaxed text-justify">
-            {texts.aboutIntro1}
-          </p>
-          <p className="text-base mb-2 sm:text-xl text-wheat leading-8 sm:leading-relaxed text-justify">
-            {texts.aboutIntro2}
-          </p>
-          <p className="text-base mb-2 sm:text-xl text-wheat leading-8 sm:leading-relaxed text-justify">
-            {texts.aboutIntro3}
-          </p>
-          <p className="text-base mb-2 sm:text-xl text-wheat leading-8 sm:leading-relaxed text-justify">
-            {texts.aboutIntro4}
-          </p>
-        </section>
+        <AboutSection className="border-b border-gray-200 last:border-b-0">
+          {ABOUT_PARAGRAPHS.map((paragraph) => (
+            <AboutParagraphs key={paragraph} text={paragraph} />
+          ))}
+        </AboutSection>
       </div>
       <div className="w-full">
-        <section className="pr-5 sm:pr-10 pb-5 sm:pb-10 pl-5 sm:pl-10 border-b border-gray-200 last:border-b-0 w-full bg-eggshell">
+        <AboutSection bgClass="bg-eggshell">
           <h1 className="pt-5 sm:pt-5 text-4xl text-center font-bold text-blue-custom-darken">
             {texts.aboutTechSkills}
           </h1>
@@ -53,8 +45,8 @@ const ContactPage = () => {
               </li>
             ))}
           </ul>
-        </section>
-        <section className="pr-5 sm:pr-10 pb-5 sm:pb-10 pl-5 sm:pl-10 border-b border-gray-200 last:border-b-0 w-full bg-wheat">
+        </AboutSection>
+        <AboutSection className="bg-wheat">
           <h1 className="pt-5 sm:pt-5 text-4xl text-center font-bold text-blue-custom">
             {texts.aboutExp}
           </h1>
@@ -80,14 +72,14 @@ const ContactPage = () => {
               />
             ))}
           </div>
-        </section>
-        <section className="pr-5 sm:pr-10 pb-5 sm:pb-10 pl-5 sm:pl-10 border-b border-gray-200 last:border-b-0 w-full">
+        </AboutSection>
+        <AboutSection>
           <h1 className="pt-5 sm:pt-5 text-4xl text-center font-bold text-eggshell">
-            Links
+            {texts.aboutLinks}
           </h1>
           <div className="md:flex gap-10 md:flex-wrap">
             {socialsLinks.map((link) => (
-              <SocialsLinks 
+              <SocialsLinks
                 key={link.name}
                 name={link.name}
                 text={link.text}
@@ -95,7 +87,7 @@ const ContactPage = () => {
               />
             ))}
           </div>
-        </section>
+        </AboutSection>
       </div>
     </main>
   );
