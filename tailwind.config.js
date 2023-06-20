@@ -20,7 +20,7 @@ module.exports = {
         "wheat": "#F5DEB3",
         "baby-blue": "#5f97f4",
       },
-      transitionProperty: { // add transition property
+      transitionProperty: {
         'height': 'height',
         'spacing': 'margin, padding'
       }
@@ -28,9 +28,10 @@ module.exports = {
   },
   variants: {
     extend: {
-      translate: ['responsive', 'group-hover', 'hover', 'focus'], // add translate
-      backgroundColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'], // add more control over bg color
-      display: ['responsive', 'group-hover', 'group-focus'], // add group-hover and group-focus
+      translate: ['responsive', 'group-hover', 'hover', 'focus'],
+      backgroundColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+      display: ['responsive', 'group-hover', 'group-focus'],
+      borderWidth: ['responsive', 'last'],
     },
   },
   plugins: [],
