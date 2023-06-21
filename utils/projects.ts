@@ -1,5 +1,6 @@
-export const projects = [
+export const initialProjects = [
   {
+    id: 0,
     title: "Table Top",
     deployLink: "https://table-top.vercel.app/",
     summary:
@@ -14,6 +15,7 @@ export const projects = [
     video: "https://www.youtube.com/live/XqTEuz2mxzo?feature=share&t=226",
   },
   {
+    id: 0,
     title: "Agora Tutorships",
     deployLink: "https://table-top.vercel.app/",
     summary:
@@ -30,6 +32,7 @@ export const projects = [
     video: "https://www.youtube.com/live/5CrEdXS5Lls?feature=share&t=82",
   },
   {
+    id: 0,
     title: "My Portfolio",
     deployLink: "https://table-top.vercel.app/",
     summary:
@@ -42,3 +45,11 @@ export const projects = [
     repos: ["https://github.com/Nicolas-Rodriguez-Ch/portfolio"],
   },
 ];
+
+export const projects = (() => 
+  initialProjects.map((project, index) => ({
+    ...project,
+    id: index + 1,
+    pathName: project.title.replaceAll(' ', '').toLowerCase(),
+  }))
+)()
