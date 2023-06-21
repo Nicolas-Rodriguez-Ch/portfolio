@@ -8,7 +8,7 @@ interface LinkProps {
 }
 
 const Links: React.FC<LinkProps> = ({ href, text, toggleMenu, pathname }) => {
-  const isActive = pathname === href || pathname === `${href}/`;
+  const isActive = pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <Link
@@ -24,5 +24,3 @@ const Links: React.FC<LinkProps> = ({ href, text, toggleMenu, pathname }) => {
 };
 
 export default Links;
-
-
