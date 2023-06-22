@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import styles from "./styles/page.module.scss";
+import styles from "../styles/page.module.scss";
 import { useRouter } from "next/navigation";
 import { assets } from "@/utils/assets";
 import { texts } from "@/utils/texts";

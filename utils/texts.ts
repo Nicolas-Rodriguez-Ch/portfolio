@@ -24,11 +24,19 @@ export const texts: TextsType = {
   aboutGraduation: "Graduation",
   aboutLinks: "My Links",
   linksGitHub: "GitHub",
-  linksLinkedIn: 'LinkedIn',
-  linksEmailHotmail: 'nicolasrodriguezch@hotmail.com',
-  linksEmailGmail: 'nicolasrodriguezch@gmail.com',
+  linksLinkedIn: "LinkedIn",
+  linksEmailHotmail: "nicolasrodriguezch@hotmail.com",
+  linksEmailGmail: "nicolasrodriguezch@gmail.com",
   linksPhoneNumber: "+57 300 264 3270",
-  linksLocation: "Bogotá D.C., Colombia"
+  linksLocation: "Bogotá D.C., Colombia",
+  projectsErrorTitle: "Project not found",
+  projectsErrorP: `Sorry, we couldn't find the project you're looking for.`,
+  projectsButton: "Go back to projects",
+  projectsDescription: "Project Description",
+  projectsLinks: "Project Link",
+  notFoundTitle: "Eror 404 Not Found",
+  notFoundText: `It seems like the page you are looking for doesn't exist.`,
+  notFoundButton: 'Go back to the Home Page'
 };
 
 export const stack: string[] = [

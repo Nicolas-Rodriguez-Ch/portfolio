@@ -32,7 +32,7 @@ const ContactPage = () => {
       </div>
       <div className="w-full">
         <AboutSection bgClass="bg-eggshell">
-          <h1 className="pt-5 sm:pt-5 text-4xl text-center font-bold text-blue-custom-darken">
+          <h1 className="pt-5 md:pt-10 text-4xl text-center font-bold text-blue-custom-darken mt-4">
             {texts.aboutTechSkills}
           </h1>
           <ul className="list-disc pl-5 md:flex md:gap-4 md:justify-between md:flex-wrap lg:justify-evenly lg:gap-6">
@@ -47,7 +47,7 @@ const ContactPage = () => {
           </ul>
         </AboutSection>
         <AboutSection className="bg-wheat">
-          <h1 className="pt-5 sm:pt-5 text-4xl text-center font-bold text-blue-custom">
+          <h1 className="pt-5 md:pt-10 text-4xl text-center font-bold text-blue-custom ">
             {texts.aboutExp}
           </h1>
           {experiences.map((experience) => (
@@ -59,7 +59,7 @@ const ContactPage = () => {
               dates={experience.dates}
             />
           ))}
-          <h1 className="pt-5 sm:pt-5 text-4xl text-center font-bold text-blue-custom">
+          <h1 className="pt-5 md:pt-10 text-4xl text-center font-bold text-blue-custom ">
             {texts.aboutEdu}
           </h1>
           <div className="md:flex justify-between">
@@ -74,7 +74,7 @@ const ContactPage = () => {
           </div>
         </AboutSection>
         <AboutSection>
-          <h1 className="pt-5 sm:pt-5 text-4xl text-center font-bold text-eggshell">
+          <h1 className="pt-5 md:pt-10 text-4xl text-center font-bold text-eggshell">
             {texts.aboutLinks}
           </h1>
           <div className="md:flex gap-10 md:flex-wrap">
