@@ -4,13 +4,19 @@ export const initialProjects = [
     title: "Table Top",
     deployLink: "https://table-top.vercel.app/",
     summary:
-      "TableTop E-commerce App is a React-based e-commerce application designed specifically for restaurants. It allows users to conveniently order food and make reservations at their favorite restaurants. The app offers user account management, order placement, reservation booking, and review functionality. Restaurant admins have access to menu management, category organization, reservation tracking, and restaurant details editing. Platform admins can create and manage restaurants. The project is open source and licensed under MIT.",
-    description: `TableTop E-commerce App is a React-based e-commerce application designed specifically for restaurants. Inspired by popular delivery apps, such as DoorDash, it allows users to conveniently order food and make reservations at their favorite restaurants. The app offers a range of features, including user account management, order placement, reservation booking, and the ability to leave reviews. Restaurant admins have access to features such as menu management, category organization, reservation tracking, and restaurant details editing. Additionally, platform admins can create and manage restaurants, assign admins, and remove restaurants from the platform. The app incorporates essential dependencies like React, React-Bootstrap, React-Router-Dom, React-Redux, Axios, and more. The project is open source and licensed under MIT.\n\nThe backend of the TableTop E-commerce App is built using TypeScript and Express. It serves as the API provider for the React frontend, facilitating functionalities like user authentication, authorization, CRUD operations for users, restaurants, orders, and reservations. JSON Web Tokens (JWT) are employed for securing API endpoints, while bcrypt is used for password hashing. The backend relies on dependencies like TypeScript, Express, Prisma, PostgreSQL, JWT, bcrypt, cors, and morgan. The project is open source and licensed under MIT.`,
+      "Table Top E-commerce App is a React-based e-commerce application designed specifically for restaurants. It allows users to conveniently order food and make reservations at their favorite restaurants. The app offers user account management, order placement, reservation booking, and review functionality. Restaurant admins have access to menu management, category organization, reservation tracking, and restaurant details editing. Platform admins can create and manage restaurants. The project is open source and licensed under MIT.",
+    description: `Table Top E-commerce App is a React-based e-commerce application designed specifically for restaurants. It allows users to conveniently order food and make reservations at their favorite restaurants. The app offers a range of features, including user account management, order placement, reservation booking, and the ability to leave reviews. Restaurant admins have access to features such as menu management, category organization, reservation tracking, and restaurant details editing. Additionally, platform admins can create and manage restaurants, assign admins, and remove restaurants from the platform. The app incorporates essential dependencies like React, React-Bootstrap, React-Router-Dom, React-Redux, Axios, and more. The project is open source and licensed under MIT.\n\nThe backend of the Table Top is built using TypeScript and Express. It serves as the API provider for the React frontend, facilitating functionalities like user authentication, authorization, CRUD operations for users, restaurants, orders, and reservations. JSON Web Tokens (JWT) are employed for securing API endpoints, while bcrypt is used for password hashing. The backend relies on dependencies like TypeScript, Express, Prisma, PostgreSQL, JWT, bcrypt, cors, and morgan. The project is open source and licensed under MIT.`,
     image:
       "https://res.cloudinary.com/dhyu9pxjh/image/upload/v1687300460/Captura_de_pantalla_2023-06-20_173326_burlaj.png",
     repos: [
-      "https://github.com/CamiloGilFranco/TableTop-FE",
-      "https://github.com/CamiloGilFranco/TableTop-BE",
+      {
+        name: "Table Top Front End",
+        value: "https://github.com/CamiloGilFranco/TableTop-FE",
+      },
+      {
+        name: "Table Top Back End",
+        value: "https://github.com/CamiloGilFranco/TableTop-BE",
+      },
     ],
     video: "https://www.youtube.com/live/XqTEuz2mxzo?feature=share&t=226",
   },
@@ -26,8 +32,16 @@ export const initialProjects = [
     image:
       "https://res.cloudinary.com/dhyu9pxjh/image/upload/v1684854498/Captura_de_pantalla_2023-05-23_100738_fiyugf.png",
     repos: [
-      "https://github.com/Nicolas-Rodriguez-Ch/agora-tutorships-client",
-      "https://github.com/Nicolas-Rodriguez-Ch/agora-tutorships-server",
+      {
+        name: "Agora Client",
+        value:
+          "https://github.com/Nicolas-Rodriguez-Ch/agora-tutorships-client",
+      },
+      {
+        name: "Agora Server",
+        value:
+          "https://github.com/Nicolas-Rodriguez-Ch/agora-tutorships-server",
+      },
     ],
     video: "https://www.youtube.com/live/5CrEdXS5Lls?feature=share&t=82",
   },
@@ -42,14 +56,18 @@ export const initialProjects = [
     The portfolio is built using Next.js, a powerful React framework, along with other essential technologies like TypeScript for type safety, Tailwind CSS for rapid and customizable design implementation and Sass for advanced CSS styling. This project ensures a seamless installation process with clear instructions to clone the repository, install dependencies, and run the application locally for development. Additionally, it includes instructions on building the application for production`,
     image:
       "https://res.cloudinary.com/dhyu9pxjh/image/upload/v1687307093/Captura_de_pantalla_2023-06-20_192428_qjtsem.png",
-    repos: ["https://github.com/Nicolas-Rodriguez-Ch/portfolio"],
+    repos: [
+      {
+        name: "Portfolio Front End",
+        value: "https://github.com/Nicolas-Rodriguez-Ch/portfolio",
+      },
+    ],
   },
 ];
 
-export const projects = (() => 
+export const projects = (() =>
   initialProjects.map((project, index) => ({
     ...project,
     id: index + 1,
-    pathName: project.title.replaceAll(' ', '').toLowerCase(),
-  }))
-)()
+    pathName: project.title.replaceAll(" ", "").toLowerCase(),
+  })))();
