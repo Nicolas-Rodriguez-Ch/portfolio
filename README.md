@@ -13,6 +13,8 @@ This project uses a number of open source projects and technologies:
 - Sass - A professional grade CSS extension language.
 - React Icons - Utilize popular icons in your React projects.
 
+Yoou can checkout the deployment here: https://nicolasrodriguez-portfolio.vercel.app/
+
 ## Installation
 
 To clone and run this application, you'll need Git and Node.js (which comes with npm) installed on your computer.

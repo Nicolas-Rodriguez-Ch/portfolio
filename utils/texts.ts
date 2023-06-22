@@ -34,9 +34,10 @@ export const texts: TextsType = {
   projectsButton: "Go back to projects",
   projectsDescription: "Project Description",
   projectsLinks: "Project Link",
+  projectsDeployLink: "Check out the live project",
   notFoundTitle: "Eror 404 Not Found",
   notFoundText: `It seems like the page you are looking for doesn't exist.`,
-  notFoundButton: 'Go back to the Home Page'
+  notFoundButton: "Go back to the Home Page",
 };
 
 export const stack: string[] = [
