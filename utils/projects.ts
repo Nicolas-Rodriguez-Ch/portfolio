@@ -23,7 +23,7 @@ export const initialProjects = [
   {
     id: 0,
     title: "Agora Tutorships",
-    deployLink: "https://table-top.vercel.app/",
+    deployLink: "https://agora-tutorships-client.vercel.app/",
     summary:
       "Agora Tutorships v2.0 is a cutting-edge web application built on Next.js, aimed at transforming digital tutoring. It provides an all-encompassing platform for managing tutoring sessions, enabling users to effortlessly connect, schedule sessions, process payments, and upload resources. Utilizing a modern and robust tech stack, including tools like React Redux, Redux Toolkit, and Stripe, it ensures an optimal user experience. Its intuitive design, engaging aesthetic appeal, and efficient image/video management make it a beacon for further community development. The project is open-source and licensed under MIT.",
     description: `Agora Tutorships v2.0 is a robust Next.js-based web application designed to enhance the digital learning landscape. This app, an upgrade from a Create React App (CRA) version, offers a seamless platform for managing tutoring sessions, integrating cutting-edge technologies for optimal user experience. It features an intuitive interface that allows users to connect, schedule sessions, process payments, and upload resources, facilitated by a comprehensive backend infrastructure.
@@ -48,7 +48,7 @@ export const initialProjects = [
   {
     id: 0,
     title: "My Portfolio",
-    deployLink: "https://table-top.vercel.app/",
+    deployLink: "https://nicolasrodriguez-portfolio.vercel.app/",
     summary:
       "Personal Portfolio is a Next.js-based website designed to showcase my professional journey, skills, and notable projects in web development. Powered by Next.js and a stack of essential technologies, including TypeScript, Tailwind CSS and Sass, the portfolio provides a comprehensive overview of my work experience and expertise. With easy installation instructions, it allows others to clone, customize, and run the application locally for development. The project is open-source under the MIT license, inviting exploration and potential contributions from the community to create their own personalized portfolio websites.",
     description: `Personal Portfolio is a Next.js-based website developed to showcase my professional journey, skills, and noteworthy projects. It provides visitors with an insight into my expertise in web development, displaying a comprehensive overview of my work experience and the technologies I specialize in.

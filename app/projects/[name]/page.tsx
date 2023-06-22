@@ -2,7 +2,7 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import { projects } from "@/utils/projects";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaHandPointRight } from "react-icons/fa";
 import Link from "next/link";
 import ProjectMedia from "@/app/components/ProjectMedia";
 import ProjectDescription from "@/app/components/ProjectDescription";
@@ -53,7 +53,17 @@ const IndiividualProjectPage = () => {
             {texts.projectsLinks}
             {project && project?.repos.length > 1 ? "s" : ""}.
           </p>
-          <ul className="list-none flex flex-col gap-5 items-center md:items-start md:flex-row">
+          <ul className="list-none flex flex-col gap-5 items-center md:items-start md:flex-row flex-wrap">
+            <li className="flex items-center gap-2">
+              <FaHandPointRight className="text-wheat" />
+              <a
+                href={project.deployLink}
+                target="_blank"
+                className="cursor-pointer text-wheat hover:text-eggshell"
+              >
+                {texts.projectsDeployLink}
+              </a>
+            </li>
             {project
               ? project.repos.map((repo) => (
                   <li key={repo.name} className="flex items-center gap-2">
