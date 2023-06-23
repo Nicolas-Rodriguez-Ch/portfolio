@@ -1,6 +1,5 @@
 'use client'
 import { links } from "@/utils/links";
-import { useRouter } from 'next/navigation'
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

@@ -1,8 +1,8 @@
+import React from "react";
+import { texts } from "@/utils/texts";
 interface paragraph {
   text: string;
 }
-import React from "react";
-import { texts } from "@/utils/texts";
 
 const AboutParagraphs: React.FC<paragraph> = ({ text }) => {
   return (

@@ -1,11 +1,11 @@
+
+import React from "react";
+import { texts } from "../../utils/texts";
 interface Education {
   title: string;
   institution: string;
   year: number;
 }
-
-import React from "react";
-import { texts } from "../../utils/texts";
 
 const EducationBlock: React.FC<Education> = ({ title, institution, year }) => {
   return (
