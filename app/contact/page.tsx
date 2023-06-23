@@ -32,14 +32,14 @@ const ContactPage = () => {
       </div>
       <div className="w-full">
         <AboutSection bgClass="bg-eggshell">
-          <h1 className="pt-5 md:pt-10 text-4xl text-center font-bold text-blue-custom-darken mt-4">
+          <h1 className="pt-5 mb-5 md:pt-10 text-4xl text-center font-bold text-blue-custom-darken mt-4">
             {texts.aboutTechSkills}
           </h1>
-          <ul className="list-disc pl-5 md:flex md:gap-4 md:justify-between md:flex-wrap lg:justify-evenly lg:gap-6">
+          <ul className="list-disc pl-5 md:flex md:gap-4 md:justify-between md:flex-wrap lg:justify-evenly lg:gap-6 font-medium">
             {stack.map((item) => (
               <li
                 key={item}
-                className="text-base mb-2 sm:text-xl text-blue-custom leading-8 sm:leading-relaxed text-justify transition-all duration-500 md:pt-6"
+                className="text-lg mb-2 sm:text-xl text-blue-custom leading-8 sm:leading-relaxed text-justify transition-all duration-500 md:pt-6"
               >
                 {item}
               </li>
