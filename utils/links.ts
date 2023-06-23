@@ -3,6 +3,7 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaWhatsapp,
+  FaBriefcase,
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import { texts } from "./texts";
@@ -24,6 +25,11 @@ export const socialsLinks = [
     text: "https://www.linkedin.com/in/nicolas-rodriguezc/",
     name: texts.linksLinkedIn,
     Icon: FaLinkedin,
+  },
+  {
+    text: "https://drive.google.com/file/d/1gUTM8mbC_CCuZ2OUObj8uSx0mIIEoLKt/view?usp=sharing",
+    name: texts.linksResume,
+    Icon: FaBriefcase,
   },
   {
     text: "mailto:nicolasrodriguezch@hotmail.com",

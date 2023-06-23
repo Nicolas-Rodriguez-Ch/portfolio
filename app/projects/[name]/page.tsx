@@ -49,10 +49,7 @@ const IndiividualProjectPage = () => {
           {project ? (
             <ProjectDescription description={project.description} />
           ) : null}
-          <p className="font-semibold text-xl mb-2">
-            {texts.projectsLinks}
-            {project && project?.repos.length > 1 ? "s" : ""}.
-          </p>
+          <p className="font-semibold text-xl mb-2">{texts.projectsLinks}.</p>
           <ul className="list-none flex flex-col gap-5 items-center md:items-start md:flex-row flex-wrap">
             <li className="flex items-center gap-2">
               <FaHandPointRight className="text-wheat" />
