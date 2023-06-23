@@ -6,7 +6,7 @@ import { texts } from "@/utils/texts";
 
 const AboutParagraphs: React.FC<paragraph> = ({ text }) => {
   return (
-    <p className="text-base mb-2 sm:text-xl text-wheat leading-8 sm:leading-relaxed text-justify">
+    <p className="text-lg mb-2 sm:text-xl text-wheat leading-8 sm:leading-relaxed text-justify">
       {texts[text]}
     </p>
   );
