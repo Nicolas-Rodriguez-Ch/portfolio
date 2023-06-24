@@ -39,8 +39,8 @@ const IndiividualProjectPage = () => {
           image={project?.image as string}
           video={project?.video}
         />
-        <div className="md:w-1/2 mt-6 md:mt-0 text-eggshell text-center md:text-justify">
-          <h1 className="text-3xl md:text-4xl font-bold text-wheat mt-4 mb-4 text-center">
+        <div className="md:w-1/2 mt-6 md:mt-0 text-eggshell text-justify">
+          <h1 className="text-3xl md:text-4xl font-bold text-wheat mt-4 mb-4">
             {project ? project.title : null}
           </h1>
           <p className="font-semibold text-xl mb-2">
@@ -50,7 +50,7 @@ const IndiividualProjectPage = () => {
             <ProjectDescription description={project.description} />
           ) : null}
           <p className="font-semibold text-xl mb-2">{texts.projectsLinks}.</p>
-          <ul className="list-none flex flex-col gap-5 items-center md:items-start md:flex-row flex-wrap">
+          <ul className="list-none flex flex-col gap-5 items-start md:flex-row flex-wrap">
             <li className="flex items-center gap-2">
               <FaHandPointRight className="text-wheat" />
               <a

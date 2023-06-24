@@ -63,6 +63,23 @@ export const initialProjects = [
       },
     ],
   },
+  {
+    id: 0,
+    title: "Backend assesment",
+    deployLink: "https://nrch-backend-assesment.onrender.com/api/healthcheck",
+    summary: `The "Backend Assessment" project is a robust backend application designed to manage user's favorite lists, offering functionalities such as account creation, login, and list management. It utilizes a tech stack that includes Node.js, Express.js, Prisma, and PostgreSQL, with bcrypt and JWT for secure authentication. Users can get started by cloning the repo, installing dependencies, setting up a PostgreSQL database, and running the development server. The API includes various endpoints for operations like a server health check, user registration, and managing favorite lists.`,
+    description: `The "Backend Assessment" project is a dynamic and user-friendly backend application designed to manage personalized favorite lists. As an API, it allows users to create an account, log in, and manipulate their favorite lists by creating, viewing, and deleting them. The application is database-driven, employing PostgreSQL for data storage. The software stack used to develop this application includes Node.js for server-side operations, Express.js as the web framework, Prisma as the database access library and ORM, and PostgreSQL as the relational database system. Furthermore, it leverages JSON Web Tokens (JWT) and bcrypt for secure user authentication and password hashing, respectively. \n\n
+
+    To get started with the application, users need to clone the repository, install dependencies, set up a PostgreSQL database, and configure the connection details. After applying the database schema and setting up environment variables for port number and JWT secret key, users can start the development server. The application enforces strong password criteria for new users, ensuring data security. Users can interact with the API using an API client like Postman or a frontend application. The application's API endpoints enable a range of operations, including a health check, user registration, login, and actions on favorite lists. The project, spearheaded by Nicolás Rodríguez, is licensed under ISC and utilizes several dependencies and devDependencies, as outlined in the package.json file.`,
+    image:
+      "https://res.cloudinary.com/dhyu9pxjh/image/upload/v1687573399/Captura_de_pantalla_2023-06-23_212244_k16n9u.png",
+    repos: [
+      {
+        name: "Backend assessment repository",
+        value: "https://github.com/Nicolas-Rodriguez-Ch/make-it-real-backend-assesment/tree/main",
+      },
+    ],
+  },
 ];
 
 export const projects = (() =>
