@@ -27,18 +27,13 @@ export const socialsLinks = [
     Icon: FaLinkedin,
   },
   {
-    text: "https://drive.google.com/file/d/1gUTM8mbC_CCuZ2OUObj8uSx0mIIEoLKt/view?usp=sharing",
+    text: "https://drive.google.com/file/d/1TfrStpQB9Od7H9UZUk3QfExm8QoD-RnG/view?usp=sharing",
     name: texts.linksResume,
     Icon: FaBriefcase,
   },
   {
     text: "mailto:nicolasrodriguezch@hotmail.com",
     name: texts.linksEmailHotmail,
-    Icon: FaEnvelope,
-  },
-  {
-    text: "mailto:nicolasrodriguezch@gmail.com",
-    name: texts.linksEmailGmail,
     Icon: FaEnvelope,
   },
   {
