@@ -14,7 +14,7 @@ export const experiences = [
     dates: "January 2020 to January 2023",
   },
   {
-    title: "Human Resources Director",
+    title: "Human Resources Specialist",
     subtitle: "Titania Training Group",
     description:
       "Responsible for structuring the Human Resources area, designing function manuals, managing selection processes, and improving work environments. Gained a comprehensive understanding of administrative processes and company structures.",
@@ -26,7 +26,7 @@ export const education = [
   {
     title: "Full Stack Web Developer",
     institution: "Make It Real.camp",
-    year: 2018,
+    year: 2023,
   },
   {
     title: `Bachelor's Degree in Psychology`,
