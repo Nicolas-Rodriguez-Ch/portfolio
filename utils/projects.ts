@@ -22,6 +22,31 @@ export const initialProjects = [
   },
   {
     id: 0,
+    title: "TechnoTrove (under development)",
+    deployLink: "https://technotroveserver.onrender.com",
+    summary:
+      "TechnoTrove is a Full Stack plataform where visitors can see the portoflios of the registered users and their respective projects, is it built using React forr the front-end and nodejs for the back-end with a database in PostgreSQL, the whole application is built using TypeScript for a more streamlined development experience",
+    description: `This Full stack platform lets visitors check the portfofolios of the users and their projects, and for the users they can create their own personal portfolios with their projects and share the relevant links. 
+
+    Local user creation and authentication, auth0 integration for creating and authentication with a third party, automatic email notification on different actions.
+
+    Private routes and session storage for users.
+
+    Security validations for updating user or project information.
+
+    Leading of a team for the development of the entire user interface
+
+    `,
+    image: "https://res.cloudinary.com/dhyu9pxjh/image/upload/v1689700669/image_zis4ec.png",
+    repos: [
+      {
+        name: "TechnoTrove Server",
+        value: "https://technotroveserver.onrender.com",
+      },
+    ],
+  },
+  {
+    id: 0,
     title: "Agora Tutorships",
     deployLink: "https://agora-tutorships-client.vercel.app/",
     summary:
@@ -76,7 +101,8 @@ export const initialProjects = [
     repos: [
       {
         name: "Backend assessment repository",
-        value: "https://github.com/Nicolas-Rodriguez-Ch/make-it-real-backend-assesment/tree/main",
+        value:
+          "https://github.com/Nicolas-Rodriguez-Ch/make-it-real-backend-assesment/tree/main",
       },
     ],
   },
