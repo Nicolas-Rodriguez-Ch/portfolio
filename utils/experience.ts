@@ -2,22 +2,21 @@ export const experiences = [
   {
     title: "Full Stack JavaScript Developer",
     subtitle: "Make It Real Camp - Software Development, Technology",
-    description:
-      "Developed and launched various products and services using Agile SCRUM work methodology. Experience in developing software with technologies such as React.JS, Redux, Node.JS, Express, Prisma, Docker Kubernetes, and TypeScript among others. Launched a scalable e-commerce platform and deployed a migration project from CRA, redux to Next JS with redux tool kit.",
+    description: `Developed, designed and launched of various products and services using the agile SCRUM work methodology, practical experience developing software with technologies such as React.JS, Redux, Node.JS, Express, Prisma, Docker, Kubernetes, and TypeScript among others`,
     dates: "January 2023 to Present",
   },
   {
     title: "Head of Admissions and Sales Representative",
     subtitle: "Make It Real Camp",
     description:
-      "Managed various software development program admissions processes, involving student selection, customer service, problem-solving, course evaluation, and creation of campaigns. Achieved significant growth in program applicants and successful admissions.",
+      "Responsible for the different admission processes, evaluating technical experience and profile, profiling interviews, and coordination of the technical process of applicants for all the web development programs with React and nodeJS at Make It Real.",
     dates: "January 2020 to January 2023",
   },
   {
     title: "Human Resources Specialist",
     subtitle: "Titania Training Group",
     description:
-      "Responsible for structuring the Human Resources area, designing function manuals, managing selection processes, and improving work environments. Gained a comprehensive understanding of administrative processes and company structures.",
+      "Responsible for the structuring of the Human Resources area and the different processes related to it: design of function manuals, selection process (administrative positions, performance evaluation, work environment, and different administrative processes.",
     dates: "February 2019 to January 2020",
   },
 ];
