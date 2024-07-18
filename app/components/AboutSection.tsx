@@ -1,21 +1,16 @@
-"use client";
-import React, { useRef, ReactNode } from "react";
-import { motion } from "framer-motion";
-import useOnScreen from "../hooks/useOnScreen";
-
-interface AboutSectionProps {
-  children: ReactNode;
-  className?: string;
-  bgClass?: string;
-}
+'use client';
+import React, { useRef, ReactNode } from 'react';
+import { motion } from 'framer-motion';
+import useOnScreen from '../hooks/useOnScreen';
+import { AboutSectionProps } from '@/utils/types';
 
 const AboutSection: React.FC<AboutSectionProps> = ({
   children,
-  className = "",
-  bgClass = "",
+  className = '',
+  bgClass = '',
 }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const isVisible = useOnScreen({ ref: ref, options: { rootMargin: "0px" } });
+  const isVisible = useOnScreen({ ref: ref, options: { rootMargin: '0px' } });
 
   return (
     <motion.div
@@ -24,7 +19,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 15 }}
       exit={{ opacity: 0, y: 15 }}
       transition={{
-        type: "spring",
+        type: 'spring',
         mass: 0.85,
         stiffness: 65,
         ease: [0.17, 0.67, 0.83, 0.67],
