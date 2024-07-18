@@ -23,7 +23,7 @@ export const initialProjects = [
   {
     id: 0,
     title: "TechnoTrove (under development)",
-    deployLink: "https://technotroveserver.onrender.com",
+    deployLink: "https://technotroveserver.onrender.com/api/healthCheck",
     summary:
       "TechnoTrove is a Full Stack plataform where visitors can see the portoflios of the registered users and their respective projects, is it built using React forr the front-end and nodejs for the back-end with a database in PostgreSQL, the whole application is built using TypeScript for a more streamlined development experience",
     description: `This Full stack platform lets visitors check the portfofolios of the users and their projects, and for the users they can create their own personal portfolios with their projects and share the relevant links. 
@@ -41,7 +41,7 @@ export const initialProjects = [
     repos: [
       {
         name: "TechnoTrove Server",
-        value: "https://technotroveserver.onrender.com",
+        value: "https://github.com/Nicolas-Rodriguez-Ch/technoTroveServer",
       },
     ],
   },

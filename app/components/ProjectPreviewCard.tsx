@@ -1,16 +1,9 @@
-'use client'
-import { links } from "@/utils/links";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-
-interface Project {
-  id: number;
-  title: string;
-  summary: string;
-  image: string;
-  pathName: string;
-}
+'use client';
+import { links } from '@/utils/links';
+import { Project } from '@/utils/types';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 const ProjectPreviewCard: React.FC<Project> = ({
   id,
@@ -20,19 +13,19 @@ const ProjectPreviewCard: React.FC<Project> = ({
   pathName,
 }) => {
   const isEven = id % 2 === 0;
-  const bgClass = isEven ? "bg-eggshell" : "";
-  const textClass = isEven ? "text-blue-custom-darken" : "text-eggshell";
+  const bgClass = isEven ? 'bg-eggshell' : '';
+  const textClass = isEven ? 'text-blue-custom-darken' : 'text-eggshell';
 
   return (
-    <main className="w-full overflow-hidden shadow-md">
+    <main className='w-full overflow-hidden shadow-md'>
       <div className={`p-4 ${bgClass}`}>
         <Link
           href={`${links[1].href}/${pathName}`}
           className={`flex flex-col md:flex-row items-center gap-4 p-4 transition-transform transform hover:scale-105`}
         >
-          <div className="w-full md:w-1/2">
+          <div className='w-full md:w-1/2'>
             <Image
-              className="rounded-lg object-cover p-2 w-full h-auto"
+              className='rounded-lg object-cover p-2 w-full h-auto'
               width={700}
               height={700}
               src={image}

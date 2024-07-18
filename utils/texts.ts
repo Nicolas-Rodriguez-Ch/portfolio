@@ -1,6 +1,4 @@
-export type TextsType = {
-  [key: string]: string;
-};
+import { TextsType } from './types';
 
 export const texts: TextsType = {
   homeLink: 'Home',
