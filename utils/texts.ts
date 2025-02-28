@@ -7,7 +7,7 @@ export const texts: TextsType = {
   homeIntro: `Hi! I'm Nicolás Rodríguez!`,
   homeProfessional: 'Professional',
   homeWebDev: 'Web Developer',
-  homeBio: `and Psychologist with a passion for leveraging Full Stack technologies to drive software development and enhance user experiences.`,
+  homeBio: `Passionate about enhancing user experiences through human-centered, intuitive UI design, leveraging a background in psychology. Proficient in developing complex web applications using HTML, CSS, React, Angular, Node, and Express, with experience in adding value to ongoing projects, providing support, and creating new solutions from scratch using modern technologies under Scrum methodologies.`,
   homeProficient: `Proficient`,
   homeBioCont: `in debugging, code review, and seamless code deployment across diverse environments. Track record of crafting sophisticated applications, prioritizing continuous development and improvement to deliver outstanding results.`,
   homeBio2: `I'm a gamer, board game enthusiast, movie buff, and all-around nerd who speaks English and Spanish fluently. I love to laugh and have fun. Join me on this journey of growth, laughter, and nerdiness!`,
