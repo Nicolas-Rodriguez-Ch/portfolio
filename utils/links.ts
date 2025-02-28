@@ -26,7 +26,7 @@ export const socialsLinks = [
     Icon: FaLinkedin,
   },
   {
-    text: 'https://drive.google.com/file/d/17xaGZHZ6tQFWheghtPfzMNUg6v3bbi0n/view',
+    text: 'https://drive.google.com/file/d/1wWqWf4g6hbc79p2gK5obPCB3IOz6L-bQ/view?usp=sharing',
     name: texts.linksResume,
     Icon: FaBriefcase,
   },

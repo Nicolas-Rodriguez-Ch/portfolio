@@ -5,7 +5,7 @@ export const experiences: ExperienceObj[] = [
     title: 'Full Stack Web Developer',
     subtitle: 'Banco de Bogotá - FinTech, Software Development',
     description: `Develop software across the entire lifecycle: coding, writing unit tests, collaborating with testers, and coordinating deployments. Build frontend applications using Angular and React and backend services with Node.js. Manage databases with PostgreSQL and DynamoDB. Implement infrastructure as code using Terraform and AWS, primarily working with TypeScript.`,
-    dates: 'August 2023- Present',
+    dates: 'August 2023- January 2025',
   },
   {
     title: 'Full Stack JavaScript Developer',
